@@ -1,0 +1,199 @@
+{
+  "config": {
+    "configFile": "D:\\Playwright Paradigm\\playwright.config.js",
+    "rootDir": "D:/Playwright Paradigm/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "json",
+        {
+          "outputFile": "report.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/Playwright Paradigm/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/Playwright Paradigm/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.53.2",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "clonefa.spec.js",
+      "file": "clonefa.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "clone the frame agreement",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 38844,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "[INFO] Navigating to https://login.salesforce.com/\n"
+                    },
+                    {
+                      "text": "[INFO] Starting Login Process\n"
+                    },
+                    {
+                      "text": "[INFO] Filling up the kv_fam2@test1.com in the element locator('#username')\n"
+                    },
+                    {
+                      "text": "[INFO] Filling up the Test@1234@ in the element locator('#password')\n"
+                    },
+                    {
+                      "text": "[INFO] Clicking on the element : locator('#Login')\n"
+                    },
+                    {
+                      "text": "[INFO] Clicking the Account tab\n"
+                    },
+                    {
+                      "text": "[INFO] Clicking on the element : locator('a[href=\"/lightning/o/Account/home\"] span.slds-truncate').filter({ hasText: 'Accounts' })\n"
+                    },
+                    {
+                      "text": "[INFO] Clicking on the element : locator('a[class=\"slds-truncate\"] span').filter({ hasText: 'Account1' })\n"
+                    },
+                    {
+                      "text": "[INFO] Clicking the show more options icon\n"
+                    },
+                    {
+                      "text": "[INFO] Clicking on the element : locator('span[class = \"slds-assistive-text\"]').filter({ hasText: 'Show more actions' })\n"
+                    },
+                    {
+                      "text": "[INFO] Clicking the FAM lightning button\n"
+                    },
+                    {
+                      "text": "[INFO] Clicking on the element : locator('a').filter({ hasText: 'FAM_Lightning_SFDC1' })\n"
+                    },
+                    {
+                      "text": "[INFO] Waiting for the application to load\n"
+                    },
+                    {
+                      "text": "The count of the frame agreement before clone is :9\n"
+                    },
+                    {
+                      "text": "[INFO] cloning the frame agreement\n"
+                    },
+                    {
+                      "text": "[INFO] Waiting for the application to load\n"
+                    },
+                    {
+                      "text": "[INFO] Clicking on the element : locator('iframe[title =\"Frame Agreement Manager\"]').contentFrame().locator('button.fa-dropdown__button span').filter({ hasText: 'Clone' })\n"
+                    },
+                    {
+                      "text": "[INFO] Clicking on the element : locator('iframe[title =\"Frame Agreement Manager\"]').contentFrame().locator('button.fa-button.fa-button--brand').filter({ hasText: 'Clone' })\n"
+                    },
+                    {
+                      "text": "Clicked the clone\n"
+                    },
+                    {
+                      "text": "The count of the frame agreement after clone is :10\n"
+                    },
+                    {
+                      "text": "[INFO] Verifying the FA counts\n"
+                    },
+                    {
+                      "text": "The count of the frame agreement after clone is :10\n"
+                    },
+                    {
+                      "text": "Cloned the frame agreement successfully\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-08-03T04:29:25.967Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Playwright Paradigm\\test-results\\clonefa-clone-the-frame-agreement-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Playwright Paradigm\\test-results\\clonefa-clone-the-frame-agreement-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "2e5f1fa909fa6fd5abeb-904ddae3cef0adcd2efd",
+          "file": "clonefa.spec.js",
+          "line": 6,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-03T04:29:24.985Z",
+    "duration": 41672.242,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
