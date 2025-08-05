@@ -16,7 +16,9 @@ async login(username, password){
     await this.fill(this.passwordField, password);
     await this.click(this.loginButton);
     await this.page.waitForLoadState('load');
+    console.log("This is for commit")
     return new LandingPage(this.page);
+    
 
 }
 
